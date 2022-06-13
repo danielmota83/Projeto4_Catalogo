@@ -85,7 +85,7 @@ main {
 }
 
 section#cadastro form div input {
-  width: 80%;
+  width: 90%;
   padding: 1rem;
   font-size: 1.3rem;
   margin-top: 0.5rem;
@@ -142,4 +142,182 @@ footer p {
   text-align: center;
   font-size: 1.2rem;
   padding: 0.3rem;
+}
+
+section#mensagem {
+  padding: 1.5rem;
+  background-image: linear-gradient(rgb(30, 5, 120), rgb(30, 81, 192));
+  color: #d2dbd3;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span#close {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+span#close:hover {
+  color: rgb(255, 0, 0);
+  transform: scale(1.5);
+}
+
+
+.message {
+  position: absolute;
+  top: 7rem;
+  right: 2rem;
+  z-index: 99999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+  padding: 1.2rem;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.message-danger {
+  background-color: #ffbac6;
+  color: #b4001e;
+}
+
+.message-success {
+  background-color: #c0ffba;
+  color: #007a0a;
+}
+
+.message-info {
+  background-color: #babfff;
+  color: #0003b4;
+}
+
+.message-warning {
+  background-color: #fffaba;
+  color: #b48400;
+}
+
+.message i {
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+/* modal */
+.modal-overlay {
+  background-color: #00000050;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.modal {
+  margin: 1rem;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dc0a2d;
+  padding: 1rem;
+  color: #fff;
+}
+
+.modal-header a#close-modal-put {
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal-body {
+  padding: 0.5rem 1rem;
+  flex: 1;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+/* search */
+.search {
+  padding-right: 2rem;
+}
+
+.search input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 3px;
+  width: 15rem;
+  border: 1px solid #270acc;
+}
+
+.search button {
+  padding: 0.5rem;
+  border: 1px solid #459ad2;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: #459ad2;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.search button:hover {
+  background-color: rgb(170, 194, 247);
+  color: #0a169a;
+}
+
+#result-search-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  margin: 2rem;
+}
+
+#result-search-space a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #9a0a7d;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #9a0a7d;
+  transition: all 0.3s ease-in-out;
+  margin-right: 2rem;
+}
+
+#result-search-space a:hover {
+  color: #dc0a2d;
+  background-color: #fff;
+}
+
+#result-search-space h2 {
+  color: #dc0a2d;
+  margin: 2rem;
+  font-size: 2rem;
 }

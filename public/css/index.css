@@ -16,14 +16,17 @@ header {
 
 .navbar {
   display: flex;
+  width: 100%;
   padding: 1.6rem;
   background-image: linear-gradient(lightblue, rgb(61, 167, 202));
   align-items: center;
   justify-content: right;
+ 
 }
 
-.navbar.search{
+.search{
   justify-self: right;
+
  
 }
 
@@ -35,7 +38,8 @@ header {
 .navbar ul.itens {
   display: flex;
   list-style: none;
-  margin-right: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .li {

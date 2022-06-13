@@ -1,4 +1,4 @@
-const Sequelize = require("sequelize");
+/*const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize(
     process.env.DB_BASE,
@@ -10,16 +10,12 @@ const sequelize = new Sequelize(
         dialect: "postgres"
     }
 );
-module.exports = { sequelize };
+module.exports = { sequelize };*/
 
 
 
 
-
-
-
-
-/*const Sequelize = require("sequelize");
+const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize(
     process.env.DATABASE_URL,
@@ -32,4 +28,4 @@ const sequelize = new Sequelize(
             },
     },
 });
-module.exports = { sequelize };*/
+module.exports = { sequelize };
