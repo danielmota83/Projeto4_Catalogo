@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Fredoka+One&family=McLaren&family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Orbitron&family=Pangolin&family=Patrick+Hand&display=swap");
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Fredoka;
+}
+
+header {
+  background-color: aliceblue;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-items: flex-end;
+  padding: 1.6rem;
+  background-image: linear-gradient(lightblue, rgb(61, 167, 202));
+  justify-content: right;
+}
+
+.imgHeader {
+  width: 100%;
+  display: flex;
+}
+
+.navbar ul.itens {
+  display: flex;
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.li {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 5rem;
+  letter-spacing: 3px;
+  color: rgba(15, 14, 14, 0.5);
+  font-size: 80%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.li:hover {
+  cursor: pointer;
+  color: rgb(244, 248, 21);
+  background-color: rgb(0, 0, 0, 0.02);
+  transform: scale(1.2);
+}
+
+body {
+  text-align: center;
+  background-color: aliceblue;
+  align-items: center;
+}
+h1 {
+  height: 40%;
+  color: rgb(13, 13, 13);
+  padding: 1% 1% 1%;
+  font-style: oblique;
+  text-shadow: 0.2rem 0.2rem 0.3rem rgb(183, 179, 179);
+}
+
+div#principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 1rem;
+  gap: 0.5rem;
+
+  font-size: 1.5rem;
+}
+
+div#principal img {
+  width: 100%;
+}
+
+div#botaoHome {
+  color: #0d0d0d;
+  background-image: linear-gradient(rgb(175, 193, 252), rgb(153, 170, 205));
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(188, 185, 185);
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1rem;
+  width: 10rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+div#botaoHome:hover {
+  background-image: linear-gradient(#b0c4f1, #5879e4);
+  transform: scale(1.2);
+}
+
+#cartao {
+  padding: 2rem;
+  margin: 0 5rem 4rem 2rem;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(234, 238, 252),
+    rgb(200, 209, 241)
+  );
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(247, 246, 246);
+  color: rgb(37, 37, 37);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  width: 80%;
+
+  border-radius: 0.4rem;
+  gap: .8rem;
+}
+
+
+.info {
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+.atracoes {
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+
+.principal {
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-image: linear-gradient(lightblue, rgb(61, 167, 202));
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 999;
+}
+
+footer p {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+#editar {
+  color: #0d0d0d;
+  background-image: linear-gradient(rgb(175, 193, 252), rgb(27, 57, 119));
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(188, 185, 185);
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1rem;
+  width: 10rem;
+   margin-bottom: .8rem 
+}
+
+#apagar {
+  color: #0d0d0d;
+  background-image: linear-gradient(rgb(252, 175, 175), rgb(177, 32, 32));
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(188, 185, 185);
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1rem;
+  width: 10rem;
+  margin: 0;
+  margin-bottom: .8rem }
+
+  #editar:hover {
+    background-image: linear-gradient(#b0c4f1, #5879e4);
+    transform: scale(1.2);
+  }
+
+  #apagar:hover {
+    background-image: linear-gradient(#e36767, #bc2222);
+    transform: scale(1.2);
+  }
+
+  .botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

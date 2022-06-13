@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Catalogo Lugares</title>
+  </head>
+  <body>
+    <header>
+      <div class="bloco nav">
+        <nav class="navbar">
+          <ul class="itens">
+            <li><a href="../" class="li">HOME</a></li>
+            <li><a href="/criar" class="li">CADASTRO</a></li>
+          </ul>
+          <%- include('./components/search.ejs')%>
+        </nav>
+      </div>
+    
+      <div>
+        <img
+          src="https://live.staticflickr.com/65535/52140464817_f2e43d5e89_k.jpg"
+          class="imgHeader"
+          alt="imagem header"
+        />
+      </div>
+    </header>
+    <% if(message != ""){ %>
+      <%-include('./components/alerts') %> 
+    <% } %>
+    <main>
+      <% if (lugarSearch.length == 0){ %>
+        
+      <% lugares.forEach(element=> { %>
+      <a href="/lugares/<%= element.id %> ">
+        <div class="elementos">
+          <div class="cartao">
+            <div class="principal">
+              <img src="<%= element.imagem %> " alt="<%= element.nome %> " />
+              <div class="nome"><%=element.nome%></div>
+            </div>
+            <div class="footer"><%=element.pais%></div>
+          </div>
+        </div>
+      </a>
+      <% }) %>
+    
+
+    <% } else { %>
+      <section class="result">
+        <div id="result-search-space">
+          <h2>Resultados da Pesquisa</h2>
+          <a href="/">Todos os lugares</a>
+        </div>
+      </section>
+      
+        <% lugarSearch.forEach(element => { %>
+        <a href="/lugares/<%= element.id %> ">
+          <div class="elementos">
+            <div class="cartao">
+              <div class="principal">
+                <img src="<%= element.imagem %> " alt="<%= element.nome %> " />
+                <div class="nome"><%=element.nome%></div>
+              </div>
+              <div class="footer"><%=element.pais%></div>
+            </div>
+          </div>
+        </a>
+        <% }) %>
+      
+  
+      <% } %>
+
+    </main>
+    <%- include('./components/footer') %>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

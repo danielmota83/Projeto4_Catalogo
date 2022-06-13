@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/criar.css" />
+    <title>Catalogo Lugares</title>
+  </head>
+<body>
+   
+        <%- include('./components/header') %>
+  
+        <main>
+
+        <section id="cadastro">
+            <span><% if(mensagem != ""){ mensagem } %></span>
+            <h2>CADASTRE MAIS LUGARES QUE TODOS DEVERIAM VISISTAR!</h2>
+    
+            <form id="form" action="/criacao" method="POST">
+              <div>
+                <label for="img">Link da Imagem</label>
+                <input
+                  type="url"
+                  name="imagem"
+                  value="<%= lugar.imagem %>"
+                  placeholder="Link da imagem"
+                  required
+                >
+              </div>
+    
+              <div>
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  value="<%= lugar.nome %>"
+                  name="nome"
+                  placeholder="Digite o nome do Lugar"
+                  required
+                />
+              </div>
+    
+              <div>
+                <label for="pais">País</label>
+                <input
+                  type="text"
+                  name="pais"
+                  value="<%= lugar.pais %>"
+                  placeholder="Digite o país desse local"
+                  required
+                >
+              </div>
+    
+              <div>
+                <label for="DESCRICAO">Informações</label>
+                <input
+                  type="text"
+                  name="descricao"
+                  value="<%= lugar.descricao %>"
+                  placeholder="Digite as informacoes mais importantes"
+                  required
+                >
+              </div>
+    
+              <div>
+                <label for="atracoes">Dicas do que fazer</label>
+                <input
+                  type="text"
+                  name="atracoes"
+                  value="<%= lugar.atracoes %>"
+                  placeholder="Digite as dicas do que fazer"
+                  required
+                >
+              </div>
+    
+              <div>
+                <button type="submit">CADASTRAR</button>
+              </div>
+            </form>
+             </section>
+        </main>
+  
+        <%- include('./components/footer') %>
+ 
+    <script src="./JS/script.js"></script> 
+</body>
+</html>

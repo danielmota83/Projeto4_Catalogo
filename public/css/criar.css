@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Fredoka+One&family=McLaren&family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Orbitron&family=Pangolin&family=Patrick+Hand&display=swap");
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Fredoka;
+}
+
+header {
+  background-color: aliceblue;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-end;
+  justify-items: flex-start;
+  padding: 1.8rem;
+  background-image: linear-gradient(lightblue, rgb(61, 167, 202));
+  justify-content: right;
+}
+
+.imgHeader {
+  width: 100%;
+  display: flex;
+}
+
+.navbar ul.itens {
+  display: flex;
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.li {
+  margin-right: 5rem;
+  letter-spacing: 3px;
+  color: rgba(15, 14, 14, 0.5);
+  font-size: 80%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.li:hover {
+  cursor: pointer;
+  color: rgb(244, 248, 21);
+  background-color: rgb(0, 0, 0, 0.02);
+  transform: scale(1.2);
+}
+
+div.titulo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+div.titulo h1 {
+  max-width: 50%;
+  min-height: 1px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background-image: linear-gradient(to bottom, #ffffff, rgb(194, 222, 244));
+  width: 100%;
+  padding-top: 5%;
+}
+
+#cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  padding: 1.6rem;
+  gap: 2rem;
+}
+
+section#cadastro form div input {
+  width: 80%;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.7rem;
+}
+
+section#cadastro h2 {
+  font-size: 2rem;
+  color: rgb(6, 6, 6);
+  padding: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgb(183, 179, 179);
+}
+
+section#cadastro form div label {
+  font-size: 1.3rem;
+}
+
+section#cadastro form button {
+  border: 1px solid #3359ec;
+  background-color: #fff;
+  color: #000000;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  width: 65%;
+}
+
+section#cadastro form button:hover {
+  background-color: #3359ec;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+footer {
+  background-image: linear-gradient(lightblue, rgb(61, 167, 202));
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 999;
+}
+
+footer p {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/details.css" />
+    <title>Catalogo Lugares</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="bloco nav">
+        <nav class="navbar">
+          <ul class="itens">
+            <li><a href="../" class="li">HOME</a></li>
+            <li><a href="/criar" class="li">CADASTRO</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <img
+          src="https://live.staticflickr.com/65535/52140464817_f2e43d5e89_k.jpg"
+          class="imgHeader"
+          alt="imagem header"
+        />
+      </div>
+    </header>
+  
+     
+    <main>
+      <div id="principal">
+        <div></div>
+        <div id="cartao">
+          <div class="principal">
+            <img src="<%= lugar.imagem %> " alt="<%= lugar.name %> " />
+            <div class="nome"><%=lugar.nome%></div>
+          </div>
+          <div class="pais"><%=lugar.pais%></div>
+          <div class="info">
+            <div class="Informacoes"><%= lugar.descricao %></div>
+          </div>
+          <div class="atracoes">
+            <span>O que fazer: <%=lugar.atracoes %></span>
+          </div>
+        </div>
+        <div class="botoes">
+            <a id="editar" href="/editar/<%= lugar.id %>">Editar</a>
+            <a id="apagar" href="/deletar/<%= lugar.id %>">Apagar</a>
+          </div>
+      <a href="../"><div id="botaoHome">Volte para a página principal</div></a>
+    </div>
+    </main>
+    <%- include('./components/footer') %>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
