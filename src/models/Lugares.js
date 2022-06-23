@@ -41,9 +41,9 @@ const Lugar = database.sequelize.define(
     }
 );
 
-const initTable = async () => {
+/*const initTable = async () => {
     await Lugar.sync();
 };
-initTable();
+initTable();*/
 
 module.exports = Lugar;
